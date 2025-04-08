@@ -1,0 +1,8 @@
+/node_modules/*
+/dist/*
+/html/*
+/public/*
+
+
+**/*.js
+**/*.ts

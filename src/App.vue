@@ -1,11 +1,18 @@
 <script setup lang="ts">
-import Demo from './pages/demo.vue';
+import Demo from './pages/demoPage.vue';
 </script>
 
 <template>
-  <div>
-    <Demo />
-  </div>
+	<div>
+		<Demo />
+	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.a {
+	width: 100px;
+	font-size: 20px;
+	color: white;
+	background: red;
+}
+</style>
