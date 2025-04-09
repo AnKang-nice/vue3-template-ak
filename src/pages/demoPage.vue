@@ -8,7 +8,7 @@ defineOptions({
 	name: 'DemoPage' // 必须指定多单词名称
 });
 
-var demo = ref('1111');
+var demo = ref('111');
 
 onMounted(() => {
 	console.log('demo mounted', demo.value);
