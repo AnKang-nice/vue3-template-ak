@@ -8,7 +8,7 @@
     "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
     "prepare": "husky",
-    "commit": "commit"
+    "commit": "git-cz"
   },
   "dependencies": {
     "vue": "^3.5.13"
@@ -16,10 +16,11 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@commitlint/prompt-cli": "^19.8.0",
     "@eslint/js": "^9.24.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.11.1",
     "eslint": "^9.24.0",
     "eslint-plugin-vue": "^10.0.0",
     "globals": "^16.0.0",
@@ -42,5 +43,10 @@
     "src/**/*.{vue,js,jsx,cjs,mjs,ts,tsx}": "eslint  --fix",
     "src/**/*.{css,scss,vue}": "stylelint --fix",
     "src/**/*": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   }
 }
