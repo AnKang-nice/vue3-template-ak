@@ -1,5 +1,6 @@
 <template>
-	<div class="demo-page" style="width: 100px; font-size: 100px" @click="getData">1111</div>
+	<div class="underline" @click="getData">1111</div>
+	<el-button @click="getData">2222</el-button>
 </template>
 
 <script lang="ts" setup>
@@ -40,11 +41,4 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss">
-.demo-page {
-	width: 100px;
-	font-size: 20px;
-	color: white;
-	background: red;
-}
-</style>
+<style lang="scss"></style>

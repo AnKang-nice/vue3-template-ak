@@ -58,12 +58,11 @@ class AxiosFn {
 	}
 
 	// 错误提示
-	showErrorMsg(config: SpecialAxiosRequestConfig) {
+	showErrorMsg(config: SpecialAxiosRequestConfig, error: ApiError) {
 		// 业务错误提示
 		const isShowMsg = !!config?.isDefaultShowMsg;
 		if (isShowMsg) {
-			// elmessage.error('请求失败');
-			alert('请求失败');
+			ElMessage.error(error.message);
 		}
 	}
 
@@ -106,7 +105,7 @@ class AxiosFn {
 					}
 				} catch (error) {
 					// 业务错误的提示控制
-					this.showErrorMsg(response.config);
+					this.showErrorMsg(response.config, error);
 					throw error;
 				}
 			},
@@ -138,8 +137,7 @@ class AxiosFn {
 					}
 				}
 				// 如果是服务器错误 / 没有返回   直接提示  不需要进行判断
-				// ElMessage.error(errorInstance.message);
-				alert('直接提示请求失败');
+				ElMessage.error(errorInstance.message);
 				return Promise.reject(errorInstance);
 			}
 		);

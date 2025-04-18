@@ -1,14 +1,31 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { fileURLToPath } from 'url';
-
+import tailwindcss from '@tailwindcss/vite';
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 // https://vite.dev/config/
 export default defineConfig(({ command, mode }) => {
 	console.log(`Command: ${command}, Mode: ${mode}`);
 
 	return {
 		base: '/',
-		plugins: [vue()],
+		plugins: [
+            vue(), 
+            tailwindcss(),
+            AutoImport({
+                dts: true,
+                resolvers: [ElementPlusResolver()],
+                eslintrc: {
+					enabled: true
+				},
+                
+            }),
+            Components({
+                resolvers: [ElementPlusResolver()],
+            })
+        ],
 		resolve: {
 			alias: {
 				'@': fileURLToPath(new URL('./src', import.meta.url))

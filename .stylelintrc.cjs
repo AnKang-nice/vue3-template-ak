@@ -12,5 +12,7 @@ module.exports = {
 		}
 	],
 	// 规则
-	rules: {}
+	rules: {
+		'no-empty-source': null
+	}
 };
