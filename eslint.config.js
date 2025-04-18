@@ -29,5 +29,8 @@ export default defineConfig([
 			'@/no-useless-catch': 'off', // 测试
 			'@typescript-eslint/no-explicit-any': 'off' // 测试
 		}
+	},
+	{
+		extends: ['.eslintrc-auto-import.json']
 	}
 ]);
