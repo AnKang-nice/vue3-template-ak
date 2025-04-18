@@ -25,6 +25,8 @@ export default defineConfig([
 		files: ['src/**/*.{js,mjs,cjs,ts,vue}'],
 		rules: {
 			// "@/no-console": "error", // 测试
+			'@/no-useless-catch': 'off', // 测试
+			'@typescript-eslint/no-explicit-any': 'off' // 测试
 		}
 	}
 ]);
