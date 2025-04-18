@@ -58,7 +58,7 @@ class AxiosFn {
 	}
 
 	// 错误提示
-	showErrorMsg(config: SpecialAxiosRequestConfig, error: ApiError) {
+	showErrorMsg(config: SpecialAxiosRequestConfig, error: any) {
 		// 业务错误提示
 		const isShowMsg = !!config?.isDefaultShowMsg;
 		if (isShowMsg) {

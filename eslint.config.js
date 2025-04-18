@@ -30,7 +30,5 @@ export default defineConfig([
 			'@typescript-eslint/no-explicit-any': 'off' // 测试
 		}
 	},
-	{
-		extends: ['.eslintrc-auto-import.json']
-	}
+	
 ]);
