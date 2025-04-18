@@ -5,7 +5,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default defineConfig([
-	{ files: ['src/**/*.{js,mjs,cjs,ts,vue}'], extends: ['./.eslintrc-auto-import.json'] },
+	{ files: ['src/**/*.{js,mjs,cjs,ts,vue}'] },
 	{
 		files: ['src/**/*.{js,mjs,cjs,ts,vue}'],
 		languageOptions: { globals: { ...globals.browser, ...globals.node } }

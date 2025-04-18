@@ -1,6 +1,6 @@
 <template>
 	<div class="underline" @click="getData">1111</div>
-	<el-button @click="getData">2222</el-button>
+	<el-button @click="getData">211222</el-button>
 </template>
 
 <script lang="ts" setup>
