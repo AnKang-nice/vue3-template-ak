@@ -41,4 +41,8 @@ onMounted(() => {
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.demo {
+	background-color: red;
+}
+</style>
