@@ -30,7 +30,7 @@ export default defineConfig(({ command, mode }) => {
 			alias: {
 				'@': fileURLToPath(new URL('./src', import.meta.url))
 			},
-			extensions: ['.js', '.ts', '.json', '.scss']
+			extensions: ['.js', '.ts', '.json', '.scss', '.vue', '.svg']
 		},
 		build: {
 			sourcemap: true,

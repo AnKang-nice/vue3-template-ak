@@ -10,6 +10,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     // "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+    },
   },
+  
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue","auto-imports.d.ts"]
 }

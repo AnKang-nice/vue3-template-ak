@@ -1,18 +1,9 @@
-<script setup lang="ts">
-import Demo from './pages/demoPage.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<div>
-		<Demo />
+		<router-view></router-view>
 	</div>
 </template>
 
-<style scoped>
-.a {
-	width: 100px;
-	font-size: 20px;
-	color: white;
-	background: red;
-}
-</style>
+<style scoped></style>

@@ -27,7 +27,8 @@ export default defineConfig([
 		rules: {
 			// "@/no-console": "error", // 测试
 			'@/no-useless-catch': 'off', // 测试
-			'@typescript-eslint/no-explicit-any': 'off' // 测试
+			'@typescript-eslint/no-explicit-any': 'off', // 测试
+            'vue/multi-word-component-names': 'off'
 		}
 	}
 ]);
